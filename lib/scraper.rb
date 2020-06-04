@@ -12,3 +12,10 @@ doc = Nokogiri::HTML(html)
 
 #puts doc
 #What we're looking at here is all of the HTML that makes up the web page found at www.flatironschool.com. The massive lines above are actually a snapshot of that HTML converted into a structure of nested nodes by Nokogiri.
+
+#Let's call .css on doc and give it the argument of our CSS selector:
+doc = Nokogiri::HTML(open("https://flatironschool.com/"))
+doc.css(".headline-26OIBN")
+
+# In actuality, this 'Array' is also a special Nokogiri object, but works very much like an Array. If you look closely at the object contained within it, you'll see that it has the 'Change things' text towards the end! To get it out, we can call .text:
+doc.css(".headline-26OIBN").text
