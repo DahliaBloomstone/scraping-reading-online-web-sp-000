@@ -22,3 +22,7 @@ doc.css(".headline-26OIBN").text
 
 #Using .text allows us to access text content inside an element scraped by Nokogiri. Run in IRB, we'd see something like this returned:
 => "Change things."
+
+
+puts doc.css(".headline-26OIBN")
+<h1 class="headline-26OIBN">Change things.</h1>
