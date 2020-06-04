@@ -8,6 +8,4 @@ html = open("https://flatironschool.com/")
 Nokogiri::HTML(html)
 
 #Let's save the HTML document in a variable, doc that we can then operate on:
-
-
 doc = Nokogiri::HTML(html)
