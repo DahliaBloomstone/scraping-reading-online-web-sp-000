@@ -30,5 +30,4 @@ puts doc.css(".headline-26OIBN")
 
 #.text and .strip: and get only the text contained inside the element that we want. Alternatively, using p will produce the array-like object we saw from before.
 
-
 #We did it! We used Nokogiri to get the HTML of a web page. We used the element inspector in the browser to ID the CSS selector of the data we wanted to scrape. We used the .css Nokogiri method, along with that CSS selector, to grab the element that contains our desired data. Finally, we used the .text method to retrieve the desired text.
