@@ -23,6 +23,9 @@ doc.css(".headline-26OIBN").text
 #Using .text allows us to access text content inside an element scraped by Nokogiri. Run in IRB, we'd see something like this returned:
 => "Change things."
 
-
+#using puts or print on doc.css will cause the HTML elements to print out.
 puts doc.css(".headline-26OIBN")
+#print out:
 <h1 class="headline-26OIBN">Change things.</h1>
+
+#.text and .strip: and get only the text contained inside the element that we want. Alternatively, using p will produce the array-like object we saw from before.
