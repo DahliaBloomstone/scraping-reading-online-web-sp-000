@@ -19,3 +19,6 @@ doc.css(".headline-26OIBN")
 
 # In actuality, this 'Array' is also a special Nokogiri object, but works very much like an Array. If you look closely at the object contained within it, you'll see that it has the 'Change things' text towards the end! To get it out, we can call .text:
 doc.css(".headline-26OIBN").text
+
+#Using .text allows us to access text content inside an element scraped by Nokogiri. Run in IRB, we'd see something like this returned:
+=> "Change things."
